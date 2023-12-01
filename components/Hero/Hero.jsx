@@ -16,7 +16,7 @@ const Hero = () => {
 
   return (
     <div className="bg-[#010C15] p-4 font-coding h-screen">
-      <div className="bg-[#01111E] border border-[#1E2D3D] rounded-lg h-full relative">
+      <div className="bg-[#01111E] border border-[#1E2D3D] rounded-lg h-full flex flex-col">
         <div className="flex text-[#84A4B5] justify-between border-b border-[#1E2D3D]">
           <div className="flex">
             <div className="py-2 px-4 w-60">
@@ -51,7 +51,7 @@ const Hero = () => {
             _contact-me
           </div>
         </div>
-        <div className="h-full">
+        <div className="flex-1">
           {activeComponent === "_hello" ? (
             <Hello />
           ) : activeComponent === "_about-me" ? (
@@ -62,7 +62,7 @@ const Hero = () => {
             <Contact />
           )}
         </div>
-        <div className="absolute bottom-0 w-full">
+        <div className="w-full">
           <Footer />
         </div>
       </div>
