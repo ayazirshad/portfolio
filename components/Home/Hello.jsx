@@ -12,6 +12,7 @@ const Hello = () => {
       loop: true,
       startDelay: 300,
       backDelay: 2000,
+      cursorChar: "|",
     });
 
     return () => {
@@ -20,23 +21,25 @@ const Hello = () => {
   }, []);
   return (
     <div className="text-[#84A4B5] h-full flex ">
-      <div className="h-full w-full md:w-1/2 flex flex-col justify-center pl-5 md:pl-20 ">
-        <div className="h-36 ">
+      <div className="h-full w-full md:w-1/2 flex flex-col justify-center px-3 md:pl-20">
+        <div className="h-44">
           <h3 className="text-lg text-[#E4E6E7]">Hello world. I'm</h3>
           <h1 className="lg:text-[60px] text-[40px] sm:text-[42px]  text-[#E4E6E7] ">
             Ayaz Irshad
           </h1>
-          <h3 className="text-[#4D5BCE] text-3xl">
-            &gt;
-            <span ref={el} className=" m-2"></span>
+          <h3 className="text-[#4D5BCE] text-2xl sm:text-3xl ">
+            <span className="mr-2">&gt;</span>
+            <span ref={el} className=""></span>
           </h3>
         </div>
-        <div className="h-36 flex flex-col justify-end ">
-          <p className="text-sm">// transforming ideas into digital reality</p>
-          <p className="text-sm">
+        <div className="h-36 pb-5 flex flex-col justify-end ">
+          <p className="text-[12px] sm:text-sm">
+            // transforming ideas into digital reality
+          </p>
+          <p className="text-[12px] sm:text-sm">
             // browse my gitHub for innovative ideas and techniques
           </p>
-          <p className="text-[#E4E6E7]">
+          <p className="text-[#E4E6E7] text-[16px]">
             <span className="text-[#37469B]">const</span>{" "}
             <span className="text-[#3ECAA3]">githubLink</span> ={" "}
             <Link
