@@ -23,7 +23,9 @@ const Footer = () => {
   return (
     <div className="border-t border-[#1E2D3D] text-[#84A4B5] w-full flex justify-between px-4">
       <div className="flex">
-        <span className="py-1 border-r border-[#1E2D3D] pr-3">find me in:</span>
+        <span className="py-1 border-r border-[#1E2D3D] pr-3 hidden sm:block">
+          find me in:
+        </span>
         <nav className="flex">
           {navElements.map((item, index) => {
             return (

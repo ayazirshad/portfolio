@@ -1,0 +1,17 @@
+@media (max-width: 800px) {
+  #nav {
+    display: none;
+  }
+  #nav-contact {
+    display: none;
+  }
+  #menu-icon {
+    display: flex;
+  }
+}
+@media (min-width: 800px) {
+  #nav-div {
+    justify-content: center;
+    max-width: max-content;
+  }
+}
