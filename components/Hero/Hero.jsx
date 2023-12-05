@@ -19,7 +19,7 @@ const Hero = () => {
 
   return (
     <div className="bg-[#010C15] p-[6px] sm:p-4 font-coding h-screen">
-      <div className="bg-[#01111E] border border-[#1E2D3D] rounded-lg h-full w-full flex flex-col overflow-hidden">
+      <div className="bg-[#01111E] border border-[#1E2D3D] rounded-lg h-full w-full flex flex-col overflow-hidden relative">
         <div className="flex text-[#84A4B5] justify-between border-b border-[#1E2D3D]">
           <div className="flex justify-between w-full relative " id="nav-div">
             <div className="py-2 px-4 w-56">
@@ -44,7 +44,7 @@ const Hero = () => {
             </nav>
             <div
               id="menu-icon"
-              className="h-full hidden justify-center items-center px-4"
+              className="h-full hidden justify-center items-center px-4 cursor-pointer"
             >
               <CiMenuFries
                 size={24}
@@ -98,7 +98,7 @@ const Hero = () => {
             _contact-me
           </div>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 h-full">
           {activeComponent === "_hello" ? (
             <Hello />
           ) : activeComponent === "_about-me" ? (
@@ -109,7 +109,7 @@ const Hero = () => {
             <Contact />
           )}
         </div>
-        <div className="w-full">
+        <div className="w-full absolute bottom-0 bg-[#01111E]">
           <Footer />
         </div>
       </div>

@@ -41,9 +41,14 @@ const Footer = () => {
           })}
         </nav>
       </div>
-      <div className="border-l border-[#1E2D3D] pl-4 flex gap-4 place-items-center hover:text-[#E4E6E7]">
-        <Link href={"/"}>@ayaz</Link>
-        <FaGithub />
+      <div className="border-l border-[#1E2D3D] pl-4  hover:text-[#E4E6E7]">
+        <Link
+          className="flex gap-4 place-items-center"
+          target="_blank"
+          href={"https://github.com/ayazirshad"}
+        >
+          @ayaz <FaGithub />
+        </Link>
       </div>
     </div>
   );
