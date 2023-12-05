@@ -10,7 +10,9 @@ import Link from "next/link";
 const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [contactShown, setContactShown] = useState(false);
+  console.log(contactShown);
   const [linksShown, setLinksShown] = useState(false);
+  console.log(linksShown);
   const [messageSent, setMessageSent] = useState(false);
   const messageSchema = Yup.object({
     name: Yup.string().min(2).max(25).required("please enter your name"),
@@ -63,8 +65,8 @@ const Contact = () => {
         >
           <BsFillTriangleFill
             size={15}
-            className={`rotate-90 ${
-              contactShown && "rotate-180"
+            className={` ${
+              contactShown ? "rotate-180" : "rotate-90"
             } transition-all duration-100`}
           />
           <span>Contacts</span>
@@ -92,8 +94,8 @@ const Contact = () => {
         >
           <BsFillTriangleFill
             size={15}
-            className={`rotate-90 ${
-              linksShown && "rotate-180"
+            className={` ${
+              linksShown ? "rotate-180" : "rotate-90"
             } transition-all duration-100`}
           />
           <span>find-me-also-on</span>
