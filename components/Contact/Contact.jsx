@@ -10,9 +10,7 @@ import Link from "next/link";
 const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [contactShown, setContactShown] = useState(false);
-  console.log(contactShown);
   const [linksShown, setLinksShown] = useState(false);
-  console.log(linksShown);
   const [messageSent, setMessageSent] = useState(false);
   const messageSchema = Yup.object({
     name: Yup.string().min(2).max(25).required("please enter your name"),
@@ -106,28 +104,32 @@ const Contact = () => {
           } py-4 px-4 border-b border-[#1E2D3D]`}
         >
           <Link
-            href={"/"}
+            href={"https://www.linkedin.com/in/ayaz-irshad-7b401622a"}
+            target="_blank"
             className="flex items-center gap-3 text-[#94AAC3] hover:text-[#E4E6E7]"
           >
             <BsBoxArrowUpRight size={15} />
             Linkedin
           </Link>
           <Link
-            href={"/"}
+            href={"https://www.fiverr.com/ayaz_1035"}
+            target="_blank"
             className="flex items-center gap-3 text-[#94AAC3] hover:text-[#E4E6E7]"
           >
             <BsBoxArrowUpRight size={15} />
             Fiverr
           </Link>
           <Link
-            href={"/"}
+            href={"https://www.youtube.com/@ayazoarthub"}
+            target="_blank"
             className="flex items-center gap-3 text-[#94AAC3] hover:text-[#E4E6E7]"
           >
             <BsBoxArrowUpRight size={15} />
             Youtube
           </Link>
           <Link
-            href={"/"}
+            href={"https://www.instagram.com/ayazoarthub/"}
+            target="_blank"
             className="flex items-center gap-3 text-[#94AAC3] hover:text-[#E4E6E7]"
           >
             <BsBoxArrowUpRight size={15} />
@@ -234,7 +236,7 @@ const Contact = () => {
                 <span className="text-[#FEA55F]">"{values.message}"</span>,
               </p>
               <p>&#125;</p>
-              <p></p>
+              <p>&nbsp;</p>
               <p>
                 <span className="text-[#5565E8]">button.addEventListener</span>
                 &#40;<span className="text-[#FEA55F]">'click'</span>, (){" "}
