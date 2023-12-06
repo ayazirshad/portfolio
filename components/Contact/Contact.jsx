@@ -201,7 +201,7 @@ const Contact = () => {
             </button>
           </form>
         </div>
-        <div className="w-full md:w-1/2 h-full flex justify-center items-center mb-20 md:mb-0">
+        <div className="w-full md:w-1/2 h-full flex justify-center items-center mb-20 ">
           <div className=" px-2 py-4 text-sm flex gap-3 w-full md:w-max">
             <div className="w-max text-right">
               <p>1</p>

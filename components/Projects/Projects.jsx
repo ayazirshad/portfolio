@@ -4,12 +4,12 @@ import { BsFillTriangleFill } from "react-icons/bs";
 import { FaReact, FaHtml5, FaRegSquare, FaSquareCheck } from "react-icons/fa6";
 import { TbBrandNextjs } from "react-icons/tb";
 import { projects } from "./ProjectsData";
+import Image from "next/image";
 
 const Projects = () => {
   const [filtersShown, setFiltersShown] = useState(true);
   const [filters, setFilters] = useState(["react js", "html", "next js"]);
   const [proj, setProj] = useState(projects);
-  console.log(proj);
 
   const handleFilters = (filter) => {
     const indexOfFilter = filters.indexOf(filter);
@@ -20,11 +20,14 @@ const Projects = () => {
       setProj(updatedProjects);
       setFilters(updatedFilters);
     } else {
-      const projectToBeAdded = projects.find((item) => item.type === filter);
-      if (projectToBeAdded) {
-        setProj([...proj, projectToBeAdded]);
-        setFilters([...filters, filter]);
+      const projectToBeAdded = projects.filter((item) => item.type === filter);
+
+      if (projectToBeAdded.length > 0) {
+        projectToBeAdded.forEach((project) => {
+          setProj((prevProjects) => [...prevProjects, project]);
+        });
       }
+      setFilters([...filters, filter]);
     }
   };
 
@@ -98,11 +101,41 @@ const Projects = () => {
             </div>
           ))}
         </h2>
-        <div className="h-[70vh] md:h-[75vh] grid grid-cols-1 md:grid-cols-2 gap-5 px-2 py-3 md:px-5 overflow-y-auto pb-28 md:pb-0">
+        <div className="h-[70vh] md:h-[75vh] grid grid-cols-1 md:grid-cols-2 gap-5 px-2 py-3 md:px-5 overflow-y-auto pb-28">
           {proj.map((item, index) => {
             return (
-              <div key={index} className="h-64 w-full bg-blue-950 rounded-xl">
-                {item.type}
+              <div
+                key={index}
+                className="h-64 w-full  rounded-md overflow-hidden relative"
+              >
+                <Image
+                  src={item.pic}
+                  className="w-full h-full object-cover transition-all duration-500"
+                  alt={item.title}
+                />
+                <div className="absolute h-full flex  flex-col justify-center items-center top-0 left-0 opacity-0 hover:opacity-100 w-full py-2 px-3 bg-[rgba(0,0,0,0.45)] transition-all duration-500 text-[#E4E6E7] text-lg font-bold backdrop-blur-sm rounded-md gap-3">
+                  <span>{item.title}</span>
+                  <span className="text-center text-[16px] font-normal">
+                    {item.description}
+                  </span>
+                  <div className="grid gap-3 grid-cols-2">
+                    <Link
+                      href={item.link}
+                      target="_blank"
+                      className="border px-3 py-2 rounded-md text-sm font-normal bg-[#011627] hover:bg-[#0a1e2f] bg-opacity-25 border-[#1E2D3D] hover:bg-opacity-50 text-center"
+                    >
+                      Preview
+                    </Link>
+
+                    <Link
+                      href={item.source}
+                      target="_blank"
+                      className="border px-3 py-2 rounded-md text-sm font-normal bg-[#011627] hover:bg-[#0a1e2f] bg-opacity-25 border-[#1E2D3D] hover:bg-opacity-50 text-center"
+                    >
+                      Source Code
+                    </Link>
+                  </div>
+                </div>
               </div>
             );
           })}

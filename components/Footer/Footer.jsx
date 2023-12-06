@@ -9,7 +9,7 @@ const Footer = () => {
   const navElements = [
     {
       icon: <FaLinkedinIn size={14} />,
-      link: "/",
+      link: "https://www.linkedin.com/in/ayaz-irshad-7b401622a",
     },
     {
       icon: <FaXTwitter size={14} />,
