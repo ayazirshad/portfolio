@@ -52,7 +52,6 @@ const Projects = () => {
           } py-4 px-4 border-b border-[#1E2D3D] flex flex-col gap-3`}
         >
           <button
-            href={"/"}
             className="flex items-center gap-3 text-[#94AAC3] hover:text-[#E4E6E7]"
             onClick={() => handleFilters("react js")}
           >
