@@ -9,7 +9,6 @@ import Interest from "./Interest";
 const AboutMe = () => {
   const [infoShown, setInfoShown] = useState(true);
   const [pagesOpen, setPagesOpen] = useState(["bio"]);
-  console.log(pagesOpen);
   const [activeComponent, setActiveComponent] = useState("bio");
   const [pageClosed, setPageClosed] = useState(false);
 
@@ -20,7 +19,6 @@ const AboutMe = () => {
     }
   };
   const closePage = (page) => {
-    console.log(pagesOpen);
     const indexOfPage = pagesOpen.indexOf(page);
     if (indexOfPage !== -1) {
       const updatedPages = pagesOpen.filter((item) => item !== page);
@@ -119,7 +117,7 @@ const AboutMe = () => {
             </div>
           ))}
         </h2>
-        <div className="bg-red-950 h-[70vh] md:h-[75vh] px-2 py-3 md:px-5 overflow-y-auto pb-28">
+        <div className=" h-[70vh] md:h-[75vh] px-2 py-3 md:px-5 overflow-y-auto pb-28">
           {activeComponent === "bio" ? (
             <Bio />
           ) : activeComponent === "skills" ? (

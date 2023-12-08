@@ -20,8 +20,8 @@ const Hello = () => {
     };
   }, []);
   return (
-    <div className="text-[#84A4B5] h-full flex ">
-      <div className="h-full w-full md:w-1/2 flex flex-col justify-center px-3 md:pl-20">
+    <div className="text-[#84A4B5] h-full flex relative">
+      <div className="h-full w-full md:w-1/2 flex flex-col justify-center px-3 md:pl-20 ">
         <div className="h-44">
           <h3 className="text-lg text-[#E4E6E7]">Hello world. I'm</h3>
           <h1 className="lg:text-[60px] text-[40px] sm:text-[42px]  text-[#E4E6E7] ">
@@ -52,7 +52,8 @@ const Hello = () => {
           </p>
         </div>
       </div>
-      <div className="h-full w-1/2 justify-center items-center hidden md:flex">
+      <div className="flex absolute top-0 md:hidden left-0 h-full  w-full md:w-1/2  place-items-center before:absolute before:h-[300px] before:w-[480px]  before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:z-20 after:h-[180px] after:w-[240px] after:translate-y-1/3 after:translate-x-36 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-[#0f969c] before:dark:opacity-30 after:dark:from-[#0f459c] after:dark:via-[#0513a9] after:dark:opacity-30 before:lg:h-[360px]"></div>
+      <div className="justify-center items-center hidden w-1/2 md:flex relative place-items-center before:absolute before:h-[300px] before:w-[480px]  before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:z-20 after:h-[180px] after:w-[240px] after:translate-y-1/3 after:translate-x-36 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-[#0f969c] before:dark:opacity-30 after:dark:from-[#0f459c] after:dark:via-[#0513a9] after:dark:opacity-30 before:lg:h-[360px] ">
         2
       </div>
     </div>
