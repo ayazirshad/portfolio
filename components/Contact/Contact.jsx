@@ -1,11 +1,16 @@
 import React, { useState } from "react";
-import { BsFillTriangleFill, BsBoxArrowUpRight } from "react-icons/bs";
+import {
+  BsFillTriangleFill,
+  BsBoxArrowUpRight,
+  BsFillCheckCircleFill,
+} from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { IoMdCall } from "react-icons/io";
 import emailjs from "@emailjs/browser";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import Link from "next/link";
+import toast from "react-hot-toast";
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
@@ -49,12 +54,15 @@ const Contact = () => {
           console.log(result.text);
           setLoading(false);
           setMessageSent(true);
-          alert("email sent successfully");
+          toast("email sent successfully", {
+            icon: <BsFillCheckCircleFill size={20} color="#0f969c" />,
+            duration: 2000,
+          });
           setMessageSent(false);
         },
         (error) => {
           setLoading(false);
-          alert(error.text);
+          toast.error(error.text);
         }
       );
   };
