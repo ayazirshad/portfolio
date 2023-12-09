@@ -92,11 +92,11 @@ const Contact = () => {
             className="flex items-center gap-3 text-[#94AAC3] hover:text-[#E4E6E7] mb-1"
           >
             <MdEmail />
-            <span className=" truncate">ayazdev@gmail.com</span>
+            <span className="truncate">codeWithAyaz@gmail.com</span>
           </Link>
           <div className="flex items-center gap-3 text-[#94AAC3] hover:text-[#E4E6E7]">
             <IoMdCall />
-            +923456789543
+            +923306316005
           </div>
         </div>
         <button
