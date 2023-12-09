@@ -1,8 +1,9 @@
 .rotatingBorder::before {
   position: absolute;
   content: "";
-  width: 150px;
-  filter: blur(15px);
+  width: 200px;
+  border-radius: 9999px;
+  filter: blur(10px);
   height: 100%;
   background: linear-gradient(#95faff, #ff8a05);
   animation: animate 4s linear infinite;
