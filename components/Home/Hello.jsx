@@ -1,6 +1,9 @@
 import Link from "next/link";
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
+import "./Hello.css";
+import Image from "next/image";
+import MyName from "../../public/images/my name.png";
 
 const Hello = () => {
   const el = useRef(null);
@@ -52,9 +55,15 @@ const Hello = () => {
           </p>
         </div>
       </div>
-      <div className="flex absolute top-0 md:hidden left-0 h-full  w-full md:w-1/2  place-items-center before:absolute before:h-[300px] before:w-[480px]  before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:z-20 after:h-[180px] after:w-[240px] after:translate-y-1/3 after:translate-x-36 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-[#0f969c] before:dark:opacity-30 after:dark:from-[#0f459c] after:dark:via-[#0513a9] after:dark:opacity-30 before:lg:h-[360px]"></div>
-      <div className="justify-center items-center hidden w-1/2 md:flex relative place-items-center before:absolute before:h-[300px] before:w-[480px]  before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:z-20 after:h-[180px] after:w-[240px] after:translate-y-1/3 after:translate-x-36 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-[#0f969c] before:dark:opacity-30 after:dark:from-[#0f459c] after:dark:via-[#0513a9] after:dark:opacity-30 before:lg:h-[360px] ">
-        2
+      <div className="flex absolute  top-0 md:hidden left-0 h-full   w-full md:w-1/2  place-items-center before:absolute before:h-[300px] before:w-[480px]  before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:z-20 after:h-[180px] after:w-[240px] after:translate-y-1/3 after:translate-x-36 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-[#0f969c] before:dark:opacity-30 after:dark:from-[#0f459c] after:dark:via-[#0513a9] after:dark:opacity-30 before:lg:h-[360px]"></div>
+      <div className="justify-center items-center hidden w-1/2 md:flex relative place-items-center before:absolute before:h-[300px] before:w-[480px]  before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute  after:h-[180px] after:w-[240px] after:translate-y-1/3 after:translate-x-36 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-[#0f969c] before:dark:opacity-30 after:dark:from-[#0f459c] after:dark:via-[#0513a9] after:dark:opacity-30 before:lg:h-[360px] ">
+        <div className="relative w-72 h-72 z-10 rounded-full flex justify-center items-center overflow-hidden rotatingBorder p-1">
+          <Image
+            src={MyName}
+            alt="<Ayaz/>"
+            className="w-full h-full z-10 rounded-full"
+          />
+        </div>
       </div>
     </div>
   );

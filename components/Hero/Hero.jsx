@@ -5,7 +5,6 @@ import Hello from "../Home/Hello";
 import AboutMe from "../About/AboutMe";
 import Projects from "../Projects/Projects";
 import Contact from "../Contact/Contact";
-import { CgMenuRightAlt } from "react-icons/cg";
 import { CiMenuFries } from "react-icons/ci";
 import "./Hero.css";
 
@@ -54,15 +53,15 @@ const Hero = () => {
             <nav
               className={`absolute top-16 w-max border border-[#1E2D3D] rounded-lg bg-[#01111E] backdrop-blur-2xl bg-opacity-30 ${
                 isSideMenuOpen ? "right-5" : "-right-full"
-              } transition-all duration-300 `}
+              } transition-all duration-300 z-50`}
               id="side-menu"
             >
               {navElements.map((item, index) => {
                 return (
                   <div
-                    className={
-                      "border-b border-[#1E2D3D] text-center cursor-pointer hover:text-[#E4E6E7] py-2 px-5"
-                    }
+                    className={` ${
+                      index !== 3 && "border-b"
+                    } border-[#1E2D3D] text-center cursor-pointer hover:text-[#E4E6E7] py-2 px-5`}
                     key={index}
                     onClick={() => {
                       hanldeActiveComponent(item);

@@ -33,7 +33,7 @@ const Footer = () => {
                 key={index}
                 href={item.link}
                 target="_blank"
-                className="hover:text-[#E4E6E7] border-r border-[#1E2D3D] flex place-items-center py-1 px-3 "
+                className="hover:text-[#E4E6E7]  border-r border-[#1E2D3D] flex place-items-center py-1 px-3 "
               >
                 {item.icon}
               </Link>
@@ -41,7 +41,7 @@ const Footer = () => {
           })}
         </nav>
       </div>
-      <div className="border-l border-[#1E2D3D] pl-4  hover:text-[#E4E6E7]">
+      <div className="border-l border-[#1E2D3D] pl-4 py-1 flex justify-center items-center hover:text-[#E4E6E7]">
         <Link
           className="flex gap-4 place-items-center"
           target="_blank"
