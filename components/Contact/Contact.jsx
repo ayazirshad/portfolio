@@ -38,7 +38,12 @@ const Contact = () => {
   const sendEmail = () => {
     setLoading(true);
     emailjs
-      .send("service_h42okx8", "template_nedaoah", params, "QQ6xkm3sN4ti4oJfD")
+      .send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        params,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      )
       .then(
         (result) => {
           console.log(result.text);

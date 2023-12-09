@@ -23,7 +23,7 @@ const Hello = () => {
     };
   }, []);
   return (
-    <div className="text-[#84A4B5] h-full flex relative">
+    <div className="text-[#84A4B5] h-full flex md:justify-between relative">
       <div className="h-full w-full md:w-1/2 flex flex-col justify-center px-3 md:pl-20 ">
         <div className="h-44">
           <h3 className="text-lg text-[#E4E6E7]">Hello world. I'm</h3>
@@ -55,9 +55,9 @@ const Hello = () => {
           </p>
         </div>
       </div>
-      <div className="flex absolute  top-0 md:hidden left-0 h-full   w-full md:w-1/2  place-items-center before:absolute before:h-[300px] before:w-[480px]  before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:z-20 after:h-[180px] after:w-[240px] after:translate-y-1/3 after:translate-x-36 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-[#0f969c] before:dark:opacity-30 after:dark:from-[#0f459c] after:dark:via-[#0513a9] after:dark:opacity-30 before:lg:h-[360px]"></div>
-      <div className="justify-center items-center hidden w-1/2 md:flex relative place-items-center before:absolute before:h-[300px] before:w-[480px]  before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute  after:h-[180px] after:w-[240px] after:translate-y-1/3 after:translate-x-36 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-[#0f969c] before:dark:opacity-30 after:dark:from-[#0f459c] after:dark:via-[#0513a9] after:dark:opacity-30 before:lg:h-[360px] ">
-        <div className="relative w-72 h-72 z-10 rounded-full flex justify-center items-center overflow-hidden rotatingBorder p-1">
+      <div className="flex absolute  top-0 md:hidden left-0 h-full  w-full md:w-2/3 lg:w-1/2  place-items-center before:absolute before:h-[300px] before:w-[480px]  before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:z-20 after:h-[180px] after:w-[240px] after:translate-y-1/3 after:translate-x-36 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-[#0f969c] before:dark:opacity-30 after:dark:from-[#0f459c] after:dark:via-[#0513a9] after:dark:opacity-30 before:lg:h-[360px]"></div>
+      <div className="mr-14 justify-center items-center hidden md:w-1/3 lg:w-1/2 md:flex relative place-items-center before:absolute before:h-[300px] before:w-[480px]  before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute  after:h-[180px] after:w-[240px] after:translate-y-1/3 after:translate-x-36 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-[#0f969c] before:dark:opacity-30 after:dark:from-[#0f459c] after:dark:via-[#0513a9] after:dark:opacity-30 before:lg:h-[360px] ">
+        <div className="relative md:w-60 lg:w-72 md:h-60 lg:h-72 z-10 rounded-full flex justify-center items-center overflow-hidden rotatingBorder p-1">
           <Image
             src={MyName}
             alt="<Ayaz/>"

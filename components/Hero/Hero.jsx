@@ -59,9 +59,8 @@ const Hero = () => {
               {navElements.map((item, index) => {
                 return (
                   <div
-                    className={` ${
-                      index !== 3 && "border-b"
-                    } border-[#1E2D3D] text-center cursor-pointer hover:text-[#E4E6E7] py-2 px-5`}
+                    className=" border-b
+                     border-[#1E2D3D] text-center cursor-pointer hover:text-[#E4E6E7] py-2 px-5"
                     key={index}
                     onClick={() => {
                       hanldeActiveComponent(item);
@@ -74,7 +73,7 @@ const Hero = () => {
               })}
               <div
                 className={
-                  "border-b border-[#1E2D3D] text-center cursor-pointer hover:text-[#E4E6E7] py-2 px-5"
+                  "text-center cursor-pointer hover:text-[#E4E6E7] py-2 px-5"
                 }
                 onClick={() => {
                   hanldeActiveComponent("_contact-me");
