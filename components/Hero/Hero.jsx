@@ -107,7 +107,7 @@ const Hero = () => {
             <Contact />
           )}
         </div>
-        <div className="w-full absolute bottom-0 bg-[#01111E]">
+        <div className="w-full absolute bottom-0 bg-[#01111E] z-40">
           <Footer />
         </div>
       </div>

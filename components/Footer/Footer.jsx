@@ -13,11 +13,11 @@ const Footer = () => {
     },
     {
       icon: <FaXTwitter size={14} />,
-      link: "/",
+      link: "https://twitter.com/AyazIrshad2",
     },
     {
       icon: <FaFacebookF size={14} />,
-      link: "/",
+      link: "https://www.facebook.com/ayaz.irshad.90",
     },
   ];
   return (
