@@ -105,14 +105,14 @@ const Projects = () => {
             return (
               <div
                 key={index}
-                className="h-64 w-full  rounded-md overflow-hidden relative"
+                className="h-64 md:h-72 lg:h-80 w-full rounded-md overflow-hidden relative"
               >
                 <Image
                   src={item.pic}
-                  className="w-full h-full object-cover transition-all duration-500"
+                  className="w-full h-full object-fill sm:object-cover lg:object-fill transition-all duration-500"
                   alt={item.title}
                 />
-                <div className="absolute h-full flex  flex-col justify-center items-center top-0 left-0 opacity-0 hover:opacity-100 w-full py-2 px-3 bg-[rgba(0,0,0,0.45)] transition-all duration-500 text-[#E4E6E7] text-lg font-bold backdrop-blur-sm rounded-md gap-3">
+                <div className="absolute h-full flex flex-col justify-center items-center top-0 left-0 opacity-0 hover:opacity-100 w-full py-2 px-3 bg-[rgba(0,0,0,0.45)] transition-all duration-500 text-[#E4E6E7] text-lg font-bold backdrop-blur-2xl rounded-md gap-3">
                   <span>{item.title}</span>
                   <span className="text-center text-[16px] font-normal">
                     {item.description}

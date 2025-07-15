@@ -2,9 +2,26 @@ import dentalPic from "../../public/images/dental-pgae.png";
 import ecommercePic from "../../public/images/ecommercePic.png";
 import textTool from "../../public/images/textTool.png";
 import foodPic from "../../public/images/foodPic.png";
-import badminton from "../../public/images/badminton.jpg";
+import scaleHire from "../../public/images/scale-hire.png";
+import billBataoBhai from "../../public/images/billBataoBhai.png";
 
 export const projects = [
+  {
+    title: "Scale Hire",
+    description: "Built on React — fast, responsive, and fully scalable.",
+    link: "https://scale-hire.vercel.app/",
+    type: "react js",
+    pic: scaleHire,
+    source: "https://github.com/ayazirshad/scale-hire",
+  },
+  {
+    title: "Bill Splitter",
+    description: "Easily split expenses and settle up with friends fast.",
+    link: "https://billbataobhai.netlify.app/",
+    type: "react js",
+    pic: billBataoBhai,
+    source: "https://github.com/ayazirshad/bill-splitter",
+  },
   {
     title: "Dental Landing Page",
     description:
@@ -22,6 +39,7 @@ export const projects = [
     pic: ecommercePic,
     source: "https://github.com/ayazirshad/ecommerce-webpage",
   },
+
   {
     title: "Text Modifying Tool",
     description: "You can modify text according to your need",
@@ -37,14 +55,6 @@ export const projects = [
     link: "https://foodorderpage.netlify.app/",
     type: "html",
     pic: foodPic,
-    source: "https://github.com/ayazirshad/food-ordering-website",
-  },
-  {
-    title: "Badminton",
-    description: "Lorem ipsum dolor sit amet consectetur",
-    link: "https://foodorderpage.netlify.app/",
-    type: "next js",
-    pic: badminton,
     source: "https://github.com/ayazirshad/food-ordering-website",
   },
 ];
