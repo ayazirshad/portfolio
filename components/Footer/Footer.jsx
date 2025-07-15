@@ -43,11 +43,11 @@ const Footer = () => {
       </div>
       <div className="border-l border-[#1E2D3D] pl-4 py-1 flex justify-center items-center hover:text-[#E4E6E7]">
         <Link
-          className="flex gap-4 place-items-center"
+          className="flex gap-2 place-items-center"
           target="_blank"
           href={"https://github.com/ayazirshad"}
         >
-          @ayaz <FaGithub />
+          @ayazirshad <FaGithub />
         </Link>
       </div>
     </div>

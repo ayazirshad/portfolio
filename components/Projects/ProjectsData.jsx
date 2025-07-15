@@ -4,6 +4,7 @@ import textTool from "../../public/images/textTool.png";
 import foodPic from "../../public/images/foodPic.png";
 import scaleHire from "../../public/images/scale-hire.png";
 import billBataoBhai from "../../public/images/billBataoBhai.png";
+import portfolio from "../../public/images//portfolio.png";
 
 export const projects = [
   {
@@ -21,6 +22,15 @@ export const projects = [
     type: "react js",
     pic: billBataoBhai,
     source: "https://github.com/ayazirshad/bill-splitter",
+  },
+  {
+    title: "My Portfolio",
+    description:
+      "Next.js-powered portfolio with smooth transitions and responsive layout.",
+    link: "https://portfolio-a-project.vercel.app/",
+    type: "next js",
+    pic: portfolio,
+    source: "https://github.com/ayazirshad/portfolio",
   },
   {
     title: "Dental Landing Page",
